@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<article class="form" >
+  <form method="post" action="https://echo.htmlacademy.ru" id="form">
+    <div>
+      <div class="form__section-title">Сумма</div>
+      <section class="form__section">
+        <div class="input-wrap">
+          <label class="input-wrap__label" for="sum">Сумма</label>
+          <input class="input-wrap__input" type="number" min="1" max="10000" id="sum" name="sum" required>
+        </div>
+
+        <div class="input-wrap">
+          <label class="input-wrap__label" for="time">Срок</label>
+          <input class="input-wrap__input" type="number" min="1" max="12" id="time" name="time" required>
+        </div>
+      </section>
+
+      <div class="form__section-title">Данные</div>
+      <section class="form__section">
+        <div class="input-wrap input-wrap--inn">
+          <label class="input-wrap__label" for="inn">ИНН</label>
+          <input class="input-wrap__input" type="text" id="inn" name="inn" required>
+        </div>
+
+        <div class="input-wrap">
+          <label class="input-wrap__label" for="surname">Фамилия</label>
+          <input class="input-wrap__input" type="text" id="surname" name="surname" required>
+        </div>
+
+        <div class="input-wrap">
+          <label class="input-wrap__label" for="name">Имя</label>
+          <input class="input-wrap__input" type="text" id="name" name="name" required>
+        </div>
+
+        <div class="input-wrap">
+          <label class="input-wrap__label" for="city">Город</label>
+          <input class="input-wrap__input" type="text" id="city" name="city" required>
+        </div>
+      </section>
+
+      <div class="form__section-title">Отправка формы</div>
+      <section class="form__section">
+        <div class="form__data-wrap">
+          <div class="form__data-title">Заполненная информация:</div>
+          <div class="form__data-text"><span>Сумма: </span><span id="data-sum"></span></div>
+          <div class="form__data-text"><span>Время: </span><span id="data-time"></span></div>
+          <div class="form__data-text"><span>ИНН: </span><span id="data-inn"></span></div>
+          <div class="form__data-text"><span>Фамилия: </span><span id="data-surname"></span></div>
+          <div class="form__data-text"><span>Имя: </span><span id="data-name"></span></div>
+          <div class="form__data-text"><span>Город: </span><span id="data-city"></span></div>
+        </div>
+
+        <button class="form__btn-submit" type="submit">Отправить</button>
+      </section>
+    </div>
+
+
+  </form>
+</article>
+
+<script src="js/jquery-validation.js"></script>
+<script src="js/validation-error-messages.js"></script>
+<script src="js/jquery.steps.min.js"></script>
+<script src="js/form-steps.js"></script>
+<script src="js/form-validation.js"></script>
+<script src="js/cities-autocomplete.js"></script>
+<script src="js/form-output-data.js"></script>
+</body>
+</html>
